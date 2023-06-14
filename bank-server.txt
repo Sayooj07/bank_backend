@@ -1,0 +1,36 @@
+
+
+Bank- Server
+
+1.Create A Folder
+2.Generate Package.json
+3.Create index.js file
+4. create .env file
+5.Install Packages 
+    -Express
+    -Cors
+    -dotenv
+6.Create .gitignore file
+7.Update package.json script with start command
+8.Start creating express server in index.js file
+    -import dotenv package
+    -import express
+    -import cors
+    -import express server
+    -setup port number for server 
+    -use cors,json parser in server app
+    -run the server app
+9.create database and collection in mongodb atlas, copy the connection string
+10.paste collection string in .env file with password and database name
+11.define steps to connect node app with mongodb database
+    -create db folder, define db connection,create a connection.js file
+    -install mongoose in connection.js file
+    -get connection string from .env file to connection.js file
+       -to get connection string from .env file: process.env
+    - connect node app with mongodb using co connection string with help of mongoose
+    -import connection.js file in index.js file
+12.Define schema for model/collection in  db
+     -  create model folder ,create userSchema.js file
+     - import mongoose userSchema.js file   
+
+13    
