@@ -1,5 +1,5 @@
 // import model in userController.js file
-const users = require('../models/userSchema')
+const users = require('../Models/userSchema')
 
 // import jsonwebtoken
 const jwt= require('jsonwebtoken')
