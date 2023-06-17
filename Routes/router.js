@@ -5,7 +5,7 @@ const express = require('express');
 const logMiddleware= require('../Middleware/routerSpecific')
 
 //create routes, using express.Router() class,object
-const router = new express.Router
+const router = new express.Router()
 
 //define routes to resolve http request
 const userController = require ('../controllers/userController')

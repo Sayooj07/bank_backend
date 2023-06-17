@@ -16,7 +16,7 @@ exports.register = async (req,res)=>{
   // get data sed by front end
   const {username,acno,password} = req.body
   if(!username || !acno || !password){
-    res.status(403).json("All Input are required!!!")
+    res.status(403).json("All Inputs are required!!!")
   }
   
   // check user is an exist user o
@@ -124,7 +124,6 @@ const creditUserDetails= await users.findOne({acno:creditAcno})
 console.log(creditUserDetails);
 
 
-
 if(debitAcno!=creditAcno){ 
 
 if (debitUserDetails && creditUserDetails) {
@@ -218,8 +217,6 @@ exports.deleteMyAcno = async (req,res)=>{
     res.status(200).json('Remove Successfully')
 
 
-
-
     
   } catch (error) {
 
@@ -229,6 +226,8 @@ exports.deleteMyAcno = async (req,res)=>{
 
 
 }
+
+
 
 
 
